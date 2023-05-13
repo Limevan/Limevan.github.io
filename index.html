@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/fav.png">
+    <link rel="stylesheet" href="style.css">
+    <script defer type="text/javascript" src="script.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <section class="Navigation--Bar">
+        <h1>Evan Lim</h1>
+        <nav class="Navigation--Tabs">
+                <a class="Home--Tab" href="#" id="Home--button">Home</a>
+                <a class="Portfolio--Tab" href="#Projects" id="Projects--button">Projects</a>
+                <a class="Website--Tab" href="#Website" id="Websites--button">This Website</a>
+                <a class="About--Tab" href="#About" id="About--button">About Me</a>
+        </nav>
+    </section>
+
+    <section class="Welcome--Block hidden1">
+        <div class="container">
+            <h1>Welcome <br>to my</h1>
+            <h1 id="Portfolio">Portfolio</h1>
+        </div>
+        <img src="/images/coding.svg" alt="Coding">
+    </section>
+
+    <section class="Projects" id="Projects">
+        <h1 class="hidden2">Projects</h1>
+        <div class="Project--Examples">
+            <div class="crane">
+                <h2 class="hidden2">Miniature Crane</h2>
+                <div class="Technologies1 hidden2">
+                    <p>Arduino</p>
+                    <p>C</p>
+                    <p>TinkerCAD</p>
+                    <p>Fusion360</p>
+                </div>
+                    <div class="Arduino--Claw hidden2">
+                    <p>
+                        For this project, I used a 3D printed model for a claw and added some modified parts to the base of the arm 
+                        using metal components. Each joint was connected to servo motors which were controlled by potentiometers.
+                        Everything was connected to an Arduino microcontroller which I programmed in the Arduino IDE for teleoperated control.
+                        I was able to apply some of my earlier knowledge of C and micro electronics from APSC in this project.
+                    </p>
+                    <img src="/images/clawondesk.jpg" alt="claw image" class="hidden2">
+                    <img src="/images/clawdemo.GIF" alt="claw demo" id="claw--demo" class="hidden2">
+                    </div>  
+            </div>
+
+            
+            <div class="Unity">
+                <h2 class="hidden2">Top-Down Dungeon Game</h2>
+                <div class="Technologies2 hidden2">
+                    <p>Unity</p>
+                    <p>C#</p>
+                    <p>Adobe Illustrator</p>
+                </div>
+                    <div class="Unity--Game hidden2">
+                        <div class="Unity--text">
+                            <p>
+                                This game was made as a past summer project which was a 2D arcade RPG using the Unity game engine and 
+                                programmed in C#. The project allowed me to explore game design using a game engine whereas my previous
+                                projects in high school were made entirely on an IDE. It was an introduction to game engines, the C# language,
+                                and game design. Majority of this game was from following a tutorial online.
+                            </p>
+                            <button onclick=" window.open('https://youtu.be/b8YUfee_pzc','_blank')"  class="code--link" type="button">See More</button>
+                        </div>
+                    <img src="/images/C-Sharp-logo.png" alt="C sharp" id="C--sharp" class="hidden2">
+                    <img src="images/unity logo.png" alt="Unity Logo" id="Unity" class="hidden2">
+                    
+                    </div>
+            </div>
+
+            <div class="Robotics">
+                <h2 class="hidden2">FIRST Robotics</h2>
+                <div class="Technologies3 hidden2">
+                    <p>REV Robotics</p>
+                    <p>Java</p>
+                    <p>C++</p>
+                    <p>WPILib</p>
+                    <p>GitHub</p>
+                </div>
+                    <div class="First--Robotics hidden2">
+                        <p>
+                            My passion for electronics and programming came from my role as a member on my high school's FIRST robotics
+                            team. My main focus was working on driver communication through LED patterns and colours on the robot's 
+                            LED strips which changed based on driver inputs, and values returned by the hardware electronics such as sensors
+                            and cameras. The robot was programmed in C++ and Java in the past.
+                        </p>
+                        <img src="/images/robotfront.png" alt="Robot Front" class="hidden2">
+                        <img src="/images/Robot.png" alt="Robot Back" class="hidden2">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="This--Website hidden2" id="Website">
+        <h1>This Website</h1>
+        <div class="Website--Content">
+            <div class="Website--Container hidden2">
+                <p id="website--technology">Created using HTML, CSS and Javascript.</p>
+                <p id="website--description">My first website introduced me to front end web development. The HTML side controls the content that appears
+                    on the webpage and website functionality. The CSS side controls the overall layout and design of the content. This
+                    specific website introduced different positioning tools, such as flexbox and grids. Any of the animations seen on the
+                    website are created using CSS transitions with reactive functions programmed in Javascript. I learned most of the basics through Codecademy
+                    and online documentation.
+                </p>
+                <div class="website--buttons">
+                <button onclick=" window.open('http://google.com','_blank')"  class="code--link" type="button">View Code</button>
+                <button onclick=" window.open('https://www.codecademy.com','_blank')"  class="code--link" type="button">Codecademy</button>
+                </div>
+            </div>
+
+            <div class="code--snippets hidden2">
+                <img src="images/htmlss.png" alt="html code" id="html">
+                <img src="images/styless.png" alt="css code" id="css">
+            </div>
+        </div>
+    </section>
+
+    <section class="About--Me" id="About">
+        <div class="About--Container hidden2">
+            <h1>About Me</h1>
+            <h2>Hi, my name is Evan!</h2>
+            <div class="About--text">
+                <p>I'm an undergraduate student at The University of British Columbia. <br>I am interested in programming and am currently 
+                    exploring different coding applications in front end development, game development, 
+                    and for hardware. Some of my hobbies that made me interested in electronics are custom
+                    PC builds and microcontrollers like Arduino.
+                </p>
+            </div>
+
+            <div class="Skill--section hidden2">
+                <div class="Language--skills">
+                    <h3>Languages</h3>
+                    <p>Java</p>
+                    <p>C</p>
+                    <p>C#</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                    <p>Python</p>
+                    <p>C++</p>
+                </div>
+                <div class="Software--skills">
+                    <h3>Other Skills</h3>
+                    <p>Solidworks</p>
+                    <p>Fusion 360</p>
+                    <p>Unity</p>
+                    <p>Adobe Illustrator</p>
+                    <p>Adobe Animate</p>
+                    <p>Adobe Photoshop</p>
+                    <p>Arduino</p>
+                    <p>Maya</p>
+                </div>
+            </div>
+            <p class="email">My Contact: elim06@student.ubc.ca</p>
+        </div>
+        <img src="/images/pclatest.jpg" alt="Custom PC" id="PC--Build" class="hidden2">
+    </section>
+
+        
+
+</body>
+</html>
