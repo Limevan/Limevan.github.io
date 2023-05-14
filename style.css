@@ -8,6 +8,7 @@
 
 html{
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 *{
@@ -138,16 +139,17 @@ body{
 .Navigation--Bar h1{
     background-color: var(--header_colour);
     justify-content: left;
-    padding: 30px 5%;
+    padding: 3.0rem 5%;
     color: white;
     font-family: 'Bebas Neue', cursive;
     font-weight: 100;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.15rem;
+    font-size: 2.0rem;
 }
 
 .Navigation--Tabs{
     background-color: var(--header_colour);
-    width: 70vw;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -160,7 +162,7 @@ body{
     position: relative;
     text-decoration: none;
     background-color: var(--header_colour);
-    font-size: 20px;
+    font-size: 2.0rem;
     color:white;
 }
 
@@ -182,6 +184,17 @@ body{
 
 .Navigation--Tabs a:hover{
     color: white;
+}
+
+/* Navigation media queries */
+@media (max-width: 700px){
+    .Navigation--Tabs a{
+        font-size: 1.3rem;
+    }
+    .Navigation--Bar h1{
+        font-size: 1.3rem;
+    }
+
 }
 
 /* Welcome Block */
