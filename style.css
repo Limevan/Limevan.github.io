@@ -213,15 +213,14 @@ body{
 .Welcome--Block .container{
     display: flex;
     flex-direction: column;
-    padding-right: 50px;
 }
 
 .Welcome--Block h1{
     background-color: transparent;
-    font-size: 100px;
+    font-size: 7vw;
     font-family: "Poppins", sans-serif;
     display: flex;
-    line-height: 1.5em;
+    line-height: 20vh;
 }
 
 .Welcome--Block #Portfolio{
@@ -232,8 +231,25 @@ body{
     color: transparent;
 }
 .Welcome--Block img{
-    width: 40%;
+    width: 50vw;
     background-color: transparent;
+}
+
+/* Welcome media queries */
+@media (max-width: 700px){
+    .Welcome--Block {
+        flex-direction: column;
+    }
+
+    .Welcome--Block h1{
+        line-height: 10rem;
+        font-size: 7rem;
+    }
+
+    .Welcome--Block img{
+        margin: 5% 5% 5% 5%;
+        width: 90vw;
+    }
 }
 
 /* Projects Section */
