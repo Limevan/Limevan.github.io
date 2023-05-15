@@ -397,6 +397,7 @@ body{
 @media (max-width: 700px){
     .Unity--Game{
         display: flex;
+        align-items: center;
         flex-direction: column;
     }
     .Unity--Game p {
@@ -460,6 +461,7 @@ body{
 @media (max-width: 700px){
     .First--Robotics{
         display: flex;
+        align-items: center;
         flex-direction: column;
     }
     .First--Robotics p {
@@ -555,6 +557,7 @@ body{
 @media (max-width: 700px){
     .Website--Content{
         display: flex;
+        align-items: center;
         flex-direction: column;
     }
     .Website--Container{
@@ -565,6 +568,7 @@ body{
         padding: 2rem 0 0 0;
         display: flex;
         align-content: center;
+        justify-content: center;
         flex-direction: column;
         width: 100vw;
     }
@@ -582,7 +586,7 @@ body{
     }
     #html{
         width: 90%;
-        padding-bottom: 2rem;
+        padding: 0 0 2rem 0;
     }
     #css{
         width: 90%;
@@ -653,7 +657,6 @@ button:active {
 
 /* About Me Section */
 .About--Me{
-    height: 100vh;
     display: flex;
     flex-direction: row;
 }
@@ -666,24 +669,29 @@ button:active {
     font-family: "Poppins", sans-serif;
 }
 
+.About--Content{
+    display: flex;
+    flex-direction: row;
+}
+
 .About--Container h1{
     font-family: 'Bebas Neue', cursive;
     font-weight: 500;
-    letter-spacing: 6px;
+    letter-spacing: 0.6rem;
     display: flex;
-    padding-top: 100px;
-    font-size: 70px;
+    padding-top: 10rem;
+    font-size: 7rem;
 
 }
 
 .About--Container h2{
-    font-size: 30px;
-    padding: 20px 0px 0px 2%;
+    font-size: 3rem;
+    padding: 2rem 0 0 2%;
 }
 
 .About--text p{
-    font-size: 20px;
-    padding: 20px 0px 15px 20px;
+    font-size: 2rem;
+    padding: 2rem 0px 1.5rem 2rem;
     line-height: 2.5em;
 }
 
@@ -693,12 +701,12 @@ button:active {
 }
 
 .Skill--section h3{
-    font-size: 30px;
-    padding-bottom: 10px;
+    font-size: 3rem;
+    padding-bottom: 1rem;
 }
 
 .Skill--section p{
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 2em;
     font-weight: 600;
 }
@@ -706,25 +714,57 @@ button:active {
 .Language--skills{
     border: 3px solid black;
     margin-right: 10%;
-    padding: 15px 50px 15px 50px;
+    padding: 1.5rem 5rem 1.5rem 5rem;
     background-color: var(--box-grey);
 }
 
 .Software--skills{
     border: 3px solid black;
-    padding: 15px 50px 15px 50px;
+    padding: 1.5rem 5rem 1.5rem 5rem;
     background-color: var(--box-grey);
 }
 
 #PC--Build {
-    padding-top: 100px;
-    width: 550px;
-    height: 750px;
-    margin: 100px 0 0 150px;
+    width: 40%;
+    height: fit-content;
+    margin: 20rem 2% 10rem 2%;
     
 }
 
 .email{
     font-weight: bold;
-    padding: 20px 20px 20px 2%;
+    font-size: 1.8rem;
+    padding: 1rem 0 2rem 2%;
+}
+
+/* About Me Media Queries */
+@media (max-width: 700px){
+    .About--Content {
+        flex-direction: column;
+    }
+    
+    .About--Container{
+        width: 90vw;
+    }
+
+    .About--Container h2{
+        font-size: 2rem;
+    }
+    .About--text p{
+        font-size: 1.5rem;
+    }
+
+    .Skill--section h3{
+        font-size: 1.8rem;
+    }
+
+    .Skill--section p{
+        font-size: 1.5rem;
+    }
+
+    #PC--Build{
+        width: 90vw;
+        margin: 2rem 0 0 2rem;
+    }
+
 }
