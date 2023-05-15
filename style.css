@@ -332,6 +332,7 @@ body{
     .Arduino--Claw p {
         width: 90vw;
         font-size: 1.5rem;
+        margin: 2rem 0 2rem 0;
     }
     .Arduino--Claw img{
         padding: 0 0 2% 0;
@@ -407,7 +408,7 @@ body{
     }
 
     .Unity--text p{
-        margin-bottom: 2rem;
+        margin: 2rem 0 2rem 0;
     }
 
     .Technologies2{
@@ -435,7 +436,6 @@ body{
     display: flex;
     padding: 0.5rem 0 0.5rem 0;
     gap: 0 0.5rem;
-    max-width: 40%;
 }
 
 .Technologies3 p{
@@ -455,6 +455,33 @@ body{
     height: 100%;
     padding: 0px 10px 30px 10px;
 }
+
+/* Robotics Media Queries */
+@media (max-width: 700px){
+    .First--Robotics{
+        display: flex;
+        flex-direction: column;
+    }
+    .First--Robotics p {
+        width: 90vw;
+        font-size: 1.5rem;
+        margin: 2rem 0 2rem 0;
+    }
+    .First--Robotics img{
+        padding: 0 0 2% 0;
+        width: 90vw;
+
+    }
+
+    .Technologies3{
+        width: 90vw;
+    }
+    
+    .Technologies3 p{
+        font-size: 3vw;
+    }
+}
+
 
 /* This Website section */
 
