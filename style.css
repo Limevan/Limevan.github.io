@@ -675,7 +675,7 @@ button:active {
 .About--Container{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 50vw;
     padding-left: 2%;
     font-family: "Poppins", sans-serif;
 }
