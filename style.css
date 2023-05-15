@@ -568,6 +568,14 @@ body{
         flex-direction: column;
         width: 100vw;
     }
+    
+    .Website--Container #website--description{
+        font-size: 1.5rem;
+    }
+
+    .Website--Container #website--technology{
+        font-size: 1.8rem;
+    }
 
     .code--snippets img{
         width: 90vw;
