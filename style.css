@@ -321,6 +321,15 @@ body{
     padding: 0px 30px 0px 10px;
 }
 
+/* Arduino Claw Media Queries */
+@media (max-width: 700px){
+    .Arduino--Claw{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
 .Unity--Game {
     display: flex;
 }
@@ -505,9 +514,7 @@ button:active {
     box-shadow: none;
     transform: translateY(0);
 }
-
-/* Project Media Queries */
-
+    
 
 /* About Me Section */
 .About--Me{
