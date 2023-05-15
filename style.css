@@ -9,6 +9,7 @@
 html{
     scroll-behavior: smooth;
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 *{
@@ -24,7 +25,7 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
-    max-width: 100vw;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -771,7 +772,7 @@ button:active {
         display: flex;
         width: 100vw;
         padding: 0 0 0 0;
-        gap: 0 4em;
+        gap: 0 2%;
     }
 
     .Language--skills{
