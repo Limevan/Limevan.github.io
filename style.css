@@ -534,7 +534,7 @@ body{
 
 .Website--Container #website--description{
     font-size: 2rem;
-    padding: 2rem 0px 1.5rem 2%;
+    padding: 2rem 0px 1.5rem 0;
     line-height: 2.5em;
 }
 
