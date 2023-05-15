@@ -486,7 +486,6 @@ body{
 
 .This--Website {
     display: flex;
-    /* height: 100vh; */
     flex-direction: column;
     position: relative;
 }
@@ -494,34 +493,34 @@ body{
 .Website--Content{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    max-width: 100vw;
 }
 
 .This--Website h1{
     font-family: 'Bebas Neue', cursive;
     font-weight: 500;
-    letter-spacing: 6px;
+    letter-spacing: 0.6rem;
     display: flex;
-    padding-top: 100px;
-    font-size: 70px;
+    padding-top: 10rem;
+    font-size: 7rem;
     padding-left: 2%;
 }
 
 .Website--Container{
-    width: 30vw;
+    width: 40vw;
     padding-left: 2%;
 }
 
 .Website--Container #website--technology{
-    font-size: 20px;
-    padding: 5px 0px 25px 0;
+    font-size: 2rem;
+    padding: 0.5rem 0 2.5rem 0;
     line-height: 2.5em;
     font-weight: 700;
 }
 
 .Website--Container #website--description{
-    font-size: 20px;
-    padding: 20px 0px 15px 20px;
+    font-size: 2rem;
+    padding: 2rem 0px 1.5rem 2%;
     line-height: 2.5em;
 }
 
@@ -537,21 +536,51 @@ body{
 
 .code--snippets {
     display: flex;
-    padding-left: 30px;
-}
-
-.code--snippets img{
-    height: 40%;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    padding: 0 2% 0 2rem;
 }
 
 #html{
-    width: 600px;
-    height: 650px;
+    width: 60%;
+    padding-right: 2rem;
 }
 #css{
-    width: 500px;
-    height: 650px;
+    width: 40%;
 }
+
+/* This Website Media Queries */
+
+@media (max-width: 700px){
+    .Website--Content{
+        display: flex;
+        flex-direction: column;
+    }
+    .Website--Container{
+        width: 90vw;
+        font-size: 1rem;
+    }
+    .code--snippets{
+        padding: 2rem 0 0 0;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .code--snippets img{
+        width: 90vw;
+    }
+    #html{
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+    #css{
+        width: 90%;
+    }
+}
+
 
 /* Button Settings */
 
@@ -572,9 +601,9 @@ button {
     margin: 0;
     min-height: 3.1em;
     min-width: 0;
-    max-width: 10em;
+    max-width: 20rem;
     outline: none;
-    padding: 10px 10px 10px 10px;
+    padding: 1rem 1rem 1rem 1rem;
     text-align: center;
     text-decoration: none;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -582,7 +611,7 @@ button {
     -webkit-user-select: none;
     touch-action: manipulation;
     will-change: transform;
-    margin: 50px 0px 0px 2%;
+    margin: 3vw 3vw 3vw 3vw;
    }
 
 button:disabled {
@@ -607,7 +636,7 @@ button:active {
         margin-right: 5%;
     }
 
-    .Unity--text button{
+    button{
         margin-top: 2%;
         margin-bottom: 2%;
     }
