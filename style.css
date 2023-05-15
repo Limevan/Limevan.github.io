@@ -24,6 +24,7 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow-x: hidden;
 }
 
 /* Scroll intersection animations */
@@ -289,6 +290,7 @@ body{
 
 .Arduino--Claw{
     display: flex;
+    align-items: center;
 }
 
 .Technologies1{
@@ -354,8 +356,10 @@ body{
 
 }
 
+
 .Unity--Game {
     display: flex;
+    align-items: center;
 }
 
 .Technologies2{
@@ -382,30 +386,35 @@ body{
 .logo--images{
     display: flex;
     align-items: center;
+
 }
 
 .Unity--Game #C--sharp {
     width: 25vw;
-    margin-right: 10vw;
+    padding: 2rem 2rem 2rem 2rem;
 }
 
 .Unity--Game #Unity{
-    width: 10vw;
+    width: 12vw;
+    padding: 2rem 2rem 2rem 2rem;
 }
 
 /* Unity Media Queries */
 @media (max-width: 700px){
     .Unity--Game{
         display: flex;
-        align-items: center;
         flex-direction: column;
     }
     .Unity--Game p {
-        width: 90vw;
+        width: 100%;
         font-size: 1.5rem;
     }
     .Unity--Game img{
         padding: 0 0 0 0;
+    }
+
+    .Unity--text{
+        width: 90%;
     }
 
     .Unity--text p{
@@ -425,12 +434,13 @@ body{
         width: 50vw
     }
     .Unity--Game #Unity{
-        width: 25vw;
+        width: 30vw;
     }
 }
 
 .First--Robotics{
     display: flex;
+    align-items: center;
 }
 
 .Technologies3{
@@ -697,7 +707,8 @@ button:active {
 
 .Skill--section{
     display: flex;
-    padding-left: 2%;
+    justify-content: center;
+    gap: 0 3rem;
 }
 
 .Skill--section h3{
@@ -713,7 +724,6 @@ button:active {
 
 .Language--skills{
     border: 3px solid black;
-    margin-right: 10%;
     padding: 1.5rem 5rem 1.5rem 5rem;
     background-color: var(--box-grey);
 }
@@ -752,6 +762,22 @@ button:active {
     }
     .About--text p{
         font-size: 1.5rem;
+    }
+
+    .Skill--section{
+        justify-content: center;
+        display: flex;
+        width: 100vw;
+        padding: 0 0 0 0;
+        gap: 0 2em;
+    }
+
+    .Language--skills{
+        padding: 1.5rem 5rem 1.5rem 5rem;
+    }
+
+    .Software--skills{
+        padding: 1.5rem 5rem 1.5rem 5rem;
     }
 
     .Skill--section h3{
