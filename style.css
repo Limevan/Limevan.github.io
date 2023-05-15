@@ -361,7 +361,6 @@ body{
     display: flex;
     padding: 0.5rem 0 0.5rem 0;
     gap: 0 0.5rem;
-    max-width: 40%;
 }
 
 .Technologies2 p{
@@ -378,16 +377,54 @@ body{
     flex-direction: column;
     width: 40%;
 }
-.Unity--Game #C--sharp {
-    width: 30%;
-    height: 70%;
-    padding: 0px 100px 0px 100px;
 
+.logo--images{
+    display: flex;
+    align-items: center;
+}
+
+.Unity--Game #C--sharp {
+    width: 25vw;
+    margin-right: 10vw;
 }
 
 .Unity--Game #Unity{
-    width: 10%;
-    height: 70%;
+    width: 10vw;
+}
+
+/* Unity Media Queries */
+@media (max-width: 700px){
+    .Unity--Game{
+        display: flex;
+        flex-direction: column;
+    }
+    .Unity--Game p {
+        width: 90vw;
+        font-size: 1.5rem;
+    }
+    .Unity--Game img{
+        padding: 0 0 0 0;
+    }
+
+    .Unity--text p{
+        margin-bottom: 2rem;
+    }
+
+    .Technologies2{
+        width: 90vw;
+    }
+    
+    .Technologies2 p{
+        font-size: 3.5vw;
+    }
+
+    .Unity--Game #C--sharp {
+        padding: 5% 0 5% 0;
+        width: 50vw
+    }
+    .Unity--Game #Unity{
+        width: 25vw;
+    }
 }
 
 .First--Robotics{
@@ -542,6 +579,11 @@ button:active {
 @media (max-width: 700px){
     .Project--Examples{
         margin-right: 5%;
+    }
+
+    .Unity--text button{
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
 }
     
