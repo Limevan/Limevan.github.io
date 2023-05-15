@@ -709,6 +709,7 @@ button:active {
     display: flex;
     justify-content: center;
     gap: 0 3rem;
+    width: 50vw;
 }
 
 .Skill--section h3{
@@ -769,15 +770,15 @@ button:active {
         display: flex;
         width: 100vw;
         padding: 0 0 0 0;
-        gap: 0 2em;
+        gap: 0 4em;
     }
 
     .Language--skills{
-        padding: 1.5rem 5rem 1.5rem 5rem;
+        padding: 1.5rem 3rem 1.5rem 3rem;
     }
 
     .Software--skills{
-        padding: 1.5rem 5rem 1.5rem 5rem;
+        padding: 1.5rem 3rem 1.5rem 3rem;
     }
 
     .Skill--section h3{
