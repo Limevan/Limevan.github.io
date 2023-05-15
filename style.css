@@ -24,6 +24,7 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
+    max-width: 100vw;
     overflow-x: hidden;
 }
 
