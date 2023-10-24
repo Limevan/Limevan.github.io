@@ -24,7 +24,7 @@ $("#About--button").click(function() {
    }); 
 
 // Scroll to reveal animations
-
+//test
 // For title
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
